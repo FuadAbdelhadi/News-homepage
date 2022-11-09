@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>W.</h1>
+        <nav class="Dark-grayish-blue">
+          <h4>Home</h4>
+          <h4>New</h4>
+          <h4>Popular</h4>
+          <h4>Trending</h4>
+          <h4>Categories</h4>
+        </nav>
+        <div class="dropdown">
+          <button id="myBtn" class="dropbtn"><img src="/assets/images/icon-menu.svg" alt=""></button>
+          <div id="myDropdown" class="dropdown-content">
+            <h4>Home</h4>
+            <h4>New</h4>
+            <h4>Popular</h4>
+            <h4>Trending</h4>
+            <h4>Categories</h4>
+          </div>
+        </div>
+      </header>
+      <main class="main-items">
+        <section class="section-1">
+          <img src="/assets/images/image-web-3-desktop.jpg" alt="" />
+          <div>
+            <p class="title">The Bright Future of Web 3.0?</p>
+            <p class="Dark-grayish-blue">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <h3>READ MORE</h3>
+          </div>
+        </section>
+        <section class="section-2">
+          <h2>New</h2>
+          <div>
+            <p class="hover-orange">Hydrogen VS Electric Cars</p>
+            <p class="grayish-blue">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div class="borders">
+            <p class="hover-orange">The Downsides of AI Artistry</p>
+            <p class="grayish-blue">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div>
+            <p class="hover-orange">Is VC Funding Drying Up?</p>
+            <p class="grayish-blue">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </section>
+        <section class="section-3">
+          <img src="/assets/images/image-retro-pcs.jpg" alt="" />
+          <div>
+            <p class="number">01</p>
+            <p class="sub-title">Reviving Retro PCs</p>
+            <p class="Dark-grayish-blue">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </section>
+        <section class="section-4">
+          <img src="/assets/images/image-top-laptops.jpg" alt="" />
+          <div>
+            <p class="number">02</p>
+            <p class="sub-title">Top 10 Laptops of 2022</p>
+            <p class="Dark-grayish-blue">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </section>
+        <section class="section-5">
+          <img src="/assets/images/image-gaming-growth.jpg" alt="" />
+          <div>
+            <p class="number">03</p>
+            <p class="sub-title">The Growth of Gaming</p>
+            <p class="Dark-grayish-blue">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      // Get the button, and when the user clicks on it, execute myFunction
+      document.getElementById("myBtn").onclick = function() {myFunction()};
+      
+      /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      </script>
+  </body>
+</html>
