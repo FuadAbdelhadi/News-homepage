@@ -188,10 +188,10 @@ div > h3:hover {
   cursor: pointer;
 }
 .dropbtn{
-    visibility: hidden;
+    visibility:hidden;
 }
 .dropdown-content h4 {
-    visibility: hidden;
+    visibility:hidden;
 }
 
 @media screen and (max-width: 376px) {
@@ -201,10 +201,11 @@ div > h3:hover {
     }
   .header {
     max-width: 350px;
+    padding-left: 30px;
   }
   nav{
     visibility: hidden;
-    max-width: 375px;
+    max-width: 160px;
   }
   .main-items {
     display: block;
@@ -243,7 +244,7 @@ div > h3:hover {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    
+    visibility: visible;
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -259,7 +260,7 @@ div > h3:hover {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 100px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
@@ -268,6 +269,7 @@ div > h3:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    visibility:visible;
   }
   
   .dropdown-content a:hover {background-color: #f1f1f1}
